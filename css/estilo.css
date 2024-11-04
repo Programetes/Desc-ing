@@ -1,4 +1,19 @@
 header{
     background-color: aqua;
-    box-shadow: 0 1.2rem rgb(0, 132, 255);
+    box-shadow: 0 1.2rem #0084ff;
+}
+.tituloContainer{
+    text-align: center;
+    background-color: #0084ff;
+    color: #FFF;
+    border-radius: 2rem;
+    height: 4rem;
+}
+.jogosDoMomento{
+    height: 14rem;
+    border-radius: 2rem;
+    background-color: #0084ff;
+}
+.jogosDoMomento button{
+    height: 12rem;
 }
