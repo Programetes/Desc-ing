@@ -45,7 +45,7 @@ header{
     border: 3px solid transparent;
     transition: 200ms ease-in-out;  
 }
-.cardList .cardItem .cardLink:hover{
+.cardLink:hover{
     border-color: #472BE0;
 }
 .cardList .cardLink .cardImg{
@@ -59,4 +59,19 @@ header{
     font-size: 1rem;
     color: #000;
     font-weight: 600;
+}
+.explorarJogosContainer {
+    background-color: #0CC0DF;
+    border-radius: 2.5rem;
+}
+.explorarTitulo {
+    background-color: #62ffff;
+    color: #121D46;
+    border-radius: 2.5rem;
+}
+.jogosContainerContent .cardList {
+    margin: 2rem;
+}
+.cardLine {
+    height: 16rem;
 }
