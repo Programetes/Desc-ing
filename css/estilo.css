@@ -16,6 +16,7 @@ header{
     background-color: #0CC0DF;
     box-shadow: 1rem 1.5rem #004BAD;
     margin-bottom: 5rem;
+    min-height: 28rem;
 }
 .contentContainer{
     background: linear-gradient(#121D46, #472BE0);
