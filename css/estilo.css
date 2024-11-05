@@ -1,19 +1,57 @@
 header{
-    background-color: aqua;
-    box-shadow: 0 1.2rem #0084ff;
+    background-color: #0CC0DF;
+}
+.headerShadow{
+    height: 1rem;
+    background-color: #004BAD;
 }
 .tituloContainer{
     text-align: center;
-    background-color: #0084ff;
-    color: #FFF;
+    background-color: #0CC0DF;
+    color: #121D46;
     border-radius: 2rem;
-    height: 4rem;
 }
 .jogosDoMomento{
-    height: 14rem;
-    border-radius: 2rem;
-    background-color: #0084ff;
+    border-radius: 2.5rem;
+    background-color: #0CC0DF;
+    box-shadow: 1rem 1.5rem #004BAD;
+    margin-bottom: 5rem;
 }
-.jogosDoMomento button{
-    height: 12rem;
+.jogosDoMomentoBtnL{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.jogosDoMomentoBtnR{
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.contentContainer{
+    background: linear-gradient(#121D46, #472BE0);
+}
+.cardList *{
+    padding: 0;
+    margin: 0
+}
+.cardList .cardItem{
+    list-style: none;
+}
+.cardList .cardItem .cardLink{
+    user-select: none;
+    display: block;
+    background-color: #FFF;
+    padding: 0.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px #00000023;
+    transition: 200ms ease-in-out;
+}
+.cardList .cardItem .cardLink:hover{
+    border-color: #004BAD;
+}
+.jogoImg{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
 }
