@@ -41,9 +41,9 @@ header{
     border-radius: 12px;
     transition: 200ms ease;
 }
-.cardList .cardItem:hover {
+.cardList .cardItem:hover .cardLink {
     border-radius: 12px;
-    border: 2px solid #472BE0;
+    border: 3px solid #0CC0DF;
     transition: 200ms ease;
 }
 .cardList .cardItem .ageRatingContainer {
@@ -103,15 +103,25 @@ header{
 }
 .textInput {
     all: unset;
+    margin-left: 1rem;
+    height: 2rem;
+    width: 26rem;
+    font-size: 21px;
 }
 .usernameInputContainer, .passwordInputContainer {
     border: 3px solid #FFF;
     border-radius: 25px;
 }
-.usernameInput, .passwordInput {
-    margin-left: 1rem;
-    height: 2rem;
-}
 .iconContainer {
     all: unset;
+}
+.loginBanner img {
+    filter: drop-shadow(1rem 1.5rem #472BE0);
+    margin-bottom: 2rem;
+}
+.btn-outline-light:hover {
+    color: #004BAD;
+}
+.btn-outline-light {
+    height: 3rem;
 }

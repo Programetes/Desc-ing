@@ -13,7 +13,7 @@
         <header class="">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="../../img/LogoDisc-ing.png" width="90" alt="Logo Disc-ing" class="d-inline-block">
                     </a>
                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Esconder a navegação">
@@ -45,15 +45,18 @@
                 </div>
                 <div class="loginForm w-100 d-flex flex-column align-items-center">
                     <h1 class="loginTitle mt-3">User Log-in</h1>
-                    <div class="usernameInputContainer p-3 col-7 d-flex justify-content-between align-items-center">
+                    <div class="usernameInputContainer mt-3 mb-2 p-3 col-7 d-flex justify-content-left align-items-center">
                         <span class="material-symbols-outlined">person</span>
-                        <input type="text" class="textInput usernameInput">
+                        <input type="text" class="textInput" id="usernameLogInput">
                     </div>
-                    <div class="passwordInputContainer mt-3 p-3 col-7 d-flex justify-content-between align-items-center">
-                        <span class="material-symbols-outlined">lock</span>
-                        <input type="text" class="textInput passwordInput">
+                    <div class="passwordInputContainer mt-3 mb-3 p-3 col-7 d-flex justify-content-between align-items-center">
+                        <div class="splitter d-flex justify-content-left">
+                            <span class="material-symbols-outlined">lock</span>
+                            <input type="password" class="textInput" id="passwordLogInput">
+                        </div>
                         <button class="iconContainer" id="viewPassword"><span class="material-symbols-outlined">visibility_off</span></button>
                     </div>
+                    <button type="submit" class="btn btn-outline-light col-2 mt-3">Log-in</button>
                 </div>
             </div>
         </section>
