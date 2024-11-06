@@ -42,11 +42,6 @@ header{
     padding: 12px;
     border-radius: 12px;
     text-decoration: none;
-    border: 3px solid transparent;
-    transition: 200ms ease-in-out;  
-}
-.cardLink:hover{
-    border-color: #472BE0;
 }
 .cardList .cardLink .cardImg{
     aspect-ratio: 1/1;
