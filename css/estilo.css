@@ -13,10 +13,11 @@ header{
 }
 .jogosPopContainer{
     border-radius: 2.5rem;
-    /* background-color: #0CC0DF;
-    box-shadow: 1rem 1.5rem #004BAD; */
+    background-color: #0CC0DF;
+    box-shadow: 1rem 1.5rem #004BAD;
     margin-bottom: 5rem;
-    min-height: 30rem;
+    min-height: 75vh;
+    max-height: 40rem;
 }
 .contentContainer{
     background: linear-gradient(#121D46, #472BE0);
@@ -34,6 +35,20 @@ header{
 }
 .cardList .cardItem{
     list-style: none;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: 200ms ease;
+}
+.cardList .cardItem:hover {
+    border-radius: 12px;
+    border: 2px solid #472BE0;
+    transition: 200ms ease;
+}
+.cardList .cardItem .ageRatingContainer {
+    display: none;
+}
+.cardList .cardItem:hover .ageRatingContainer {
+    display: flex;
 }
 .cardList .cardItem .cardLink{
     user-select: none;

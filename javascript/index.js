@@ -36,9 +36,10 @@ async function fetchGameApi(){
   console.log(obj);
 }
 
-
-function hoverAnimationIn() {
-  ageRatingClasses = this.classList;
+function addAgeClassificacao() {
+  for(let i=0; i<cardsJogoPop.length; i++) {
+    
+  ageRatingClasses = cardsJogoPop[i].classList;
   let ageRating;
   if(ageRatingClasses.contains('age18')) {
     ageRating = 'https://upload.wikimedia.org/wikipedia/commons/2/2a/DJCTQ_-_18.svg'
@@ -58,17 +59,8 @@ function hoverAnimationIn() {
   } else {
     ageRating = 'https://logodownload.org/wp-content/uploads/2017/07/classificacao-livre-logo-1.png';
   }
-  this.querySelector('.ageRatingContainer').innerHTML = '<img class="w-25" src="' + ageRating + '">';
-  this.style = 'border: 2px solid #472BE0; border-radius: 12px; transition: 200ms ease;'
-}
-
-function hoverAnimationOut() {
-  this.querySelector('.ageRatingContainer').innerHTML = '';
-  this.style = 'border-radius: 12px; border: 2px solid transparent; transition: 200ms ease;'
+  cardsJogoPop[i].querySelector('.ageRatingContainer').innerHTML = '<img class="w-25" src="' + ageRating + '">';
+  }
 }
 
 const cardsJogoPop = document.querySelectorAll('.cardItem');
-cardsJogoPop.forEach(function(elem){
-  elem.addEventListener('mouseenter', hoverAnimationIn);
-  elem.addEventListener('mouseleave', hoverAnimationOut);
-})
