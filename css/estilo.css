@@ -1,3 +1,7 @@
+@font-face {
+    font-family: pixelFont;
+    src: url(../fonts/Better\ VCR\ 6.1.ttf)
+}
 header{
     background-color: #0CC0DF;
 }
@@ -17,7 +21,7 @@ header{
     min-height: 32rem;
     height: 32rem;
 }
-.contentContainer{
+.contentContainerIndex{
     background: linear-gradient(#121D46, #472BE0);
     min-height: 100vh;
 }
@@ -85,4 +89,29 @@ header{
 }
 .swiper-pagination, .swiper-button-prev, .swiper-button-next{
     color:#62ffff;
+}
+.contentContainerLogin {
+    min-height: 100vh;
+    background: linear-gradient(#472BE0, #9e2be0, #e02b7c);
+}
+.loginWindowContainer * {
+    font-family: pixelFont, sans-serif;
+    color: #FFF;
+}
+.loginWindowContainer {
+    border-radius: 20px;
+}
+.textInput {
+    all: unset;
+}
+.usernameInputContainer, .passwordInputContainer {
+    border: 3px solid #FFF;
+    border-radius: 25px;
+}
+.usernameInput, .passwordInput {
+    margin-left: 1rem;
+    height: 2rem;
+}
+.iconContainer {
+    all: unset;
 }

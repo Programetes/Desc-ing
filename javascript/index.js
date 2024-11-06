@@ -63,4 +63,5 @@ function addAgeClassificacao() {
   }
 }
 
+
 const cardsJogoPop = document.querySelectorAll('.cardItem');
