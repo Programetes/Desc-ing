@@ -59,10 +59,12 @@ function hoverAnimationIn() {
     ageRating = 'https://logodownload.org/wp-content/uploads/2017/07/classificacao-livre-logo-1.png';
   }
   this.querySelector('.ageRatingContainer').innerHTML = '<img class="w-25" src="' + ageRating + '">';
+  this.style = 'border: 2px solid #472BE0; border-radius: 12px; transition: 200ms ease;'
 }
 
 function hoverAnimationOut() {
   this.querySelector('.ageRatingContainer').innerHTML = '';
+  this.style = 'border-radius: 12px; border: 2px solid transparent; transition: 200ms ease;'
 }
 
 const cardsJogoPop = document.querySelectorAll('.cardItem');
