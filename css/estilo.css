@@ -13,11 +13,9 @@ header{
 }
 .jogosPopContainer{
     border-radius: 2.5rem;
-    background-color: #0CC0DF;
-    box-shadow: 1rem 1.5rem #004BAD;
     margin-bottom: 5rem;
-    min-height: 75vh;
-    max-height: 40rem;
+    min-height: 32rem;
+    height: 32rem;
 }
 .contentContainer{
     background: linear-gradient(#121D46, #472BE0);
@@ -66,7 +64,7 @@ header{
 }
 .cardList .cardLink .cardTitle{
     margin-top: 12px;
-    font-size: clamp(1rem, 0.3043rem + 3.4783vw, 1.2rem);
+    font-size: clamp(0.5rem, 0.9rem, 1.2rem);
     color: #000;
     font-weight: 600;
 }
@@ -84,4 +82,7 @@ header{
 }
 .cardLine {
     height: 16rem;
+}
+.swiper-pagination, .swiper-button-prev, .swiper-button-next{
+    color:#62ffff;
 }
