@@ -16,7 +16,7 @@ header{
     background-color: #0CC0DF;
     box-shadow: 1rem 1.5rem #004BAD;
     margin-bottom: 5rem;
-    min-height: 28rem;
+    min-height: 45vh;
 }
 .contentContainer{
     background: linear-gradient(#121D46, #472BE0);
@@ -51,7 +51,7 @@ header{
 }
 .cardList .cardLink .cardTitle{
     margin-top: 12px;
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.3043rem + 3.4783vw, 1.2rem);
     color: #000;
     font-weight: 600;
 }
