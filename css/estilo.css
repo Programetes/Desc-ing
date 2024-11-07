@@ -110,6 +110,11 @@ header{
     background: linear-gradient(#472BE0, #9e2be0, #e02b7c);
     padding-bottom: 3rem;
 }
+.contentContainerSignin {
+    min-height: 100vh;
+    background: linear-gradient(#121D46, #472BE0);
+    padding-bottom: 3rem;
+}
 .loginWindowContainer * {
     font-family: pixelFont, sans-serif;
     color: #FFF;
@@ -121,6 +126,7 @@ header{
     all: unset;
     margin-left: 1rem;
     height: 2rem;
+    width: 26rem;
     font-size: 21px;
 }
 .usernameInputContainer, .passwordInputContainer {
@@ -140,6 +146,9 @@ header{
 .btn-outline-light {
     height: 3rem;
 }
-.logLinksContainer a, .loginLink a {
+.logLinksContainer a {
     color: #472BE0;
+}
+.loginLink a {
+    color: #e02b7c;
 }
