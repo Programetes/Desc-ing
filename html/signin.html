@@ -43,33 +43,29 @@
                 <div class="loginBanner">
                     <img src="../img/LoginBanner.png" alt="Banner de Log-in" class="loginBannerImg w-100">
                 </div>
-                <div class="signinForm w-100 d-flex flex-column align-items-center">
+                <form class="signinForm w-100 d-flex flex-column align-items-center">
                     <h1 class="signinTitle mt-3">User Log-in</h1>
-                    <div class="usernameInputContainer mt-3 mb-2 p-3 col-7 d-flex justify-content-left align-items-center">
+                    <div class="usernameInputContainer mt-3 mb-2 p-3 d-flex justify-content-between align-items-center">
+                        <input type="text" class="textInput" placeholder="Usuário" autocomplete="off">
                         <span class="material-symbols-outlined">person</span>
-                        <input type="text" style="color: #ffffff59" value="Usuário" class="textInput labeled" autocomplete="off">
                     </div>
-                    <div class="usernameInputContainer mt-3 mb-2 p-3 col-7 d-flex justify-content-left align-items-center">
+                    <div class="usernameInputContainer mt-3 mb-2 p-3 d-flex justify-content-between align-items-center">
+                        <input type="text" class="textInput" placeholder="e-mail" autocomplete="off">
                         <span class="material-symbols-outlined">mail</span>
-                        <input type="text" style="color: #ffffff59" value="e-mail" class="textInput labeled" autocomplete="off">
                     </div>
-                    <div class="passwordInputContainer mt-3 mb-2 p-3 col-7 d-flex justify-content-between align-items-center">
-                        <div class="splitter d-flex justify-content-left">
-                            <span class="material-symbols-outlined">lock</span>
-                            <input type="text" style="color: #ffffff59" value="Senha" class="textInput labeled password" autocomplete="off">
-                        </div>
-                        <button class="iconContainer viewPasswordBtn"><span class="material-symbols-outlined">visibility_off</span></button>
+                    <div class="passwordInputContainer mt-3 mb-2 p-3 d-flex justify-content-between align-items-center">
+                        <input type="password" class="textInput password" placeholder="Senha" autocomplete="off">
+                        <button type="button" class="iconContainer viewPasswordBtn"><span class="material-symbols-outlined">visibility_off</span></button>
                     </div>
-                    <div class="passwordInputContainer mt-3 mb-3 p-3 col-7 d-flex justify-content-between align-items-center">
-                        <div class="splitter d-flex justify-content-left">
-                            <span class="material-symbols-outlined">lock</span>
-                            <input type="text" style="color: #ffffff59" value="Confirme sua senha" class="textInput labeled password" autocomplete="off">
-                        </div>
-                        <button class="iconContainer viewPasswordBtn"><span class="material-symbols-outlined">visibility_off</span></button>
+                    <div class="passwordInputContainer mt-3 mb-3 p-3 d-flex justify-content-between align-items-center">
+                        <input type="password" class="textInput password" placeholder="Confirme sua senha" autocomplete="off">
+                        <button type="button" class="iconContainer viewPasswordBtn"><span class="material-symbols-outlined">visibility_off</span></button>
                     </div>
                     <p class="loginLink text-center">Já passou por aqui? <a href="login.html" class="criarContaLink">Entre com sua conta</a>!</p>
-                    <button type="submit" class="btn btn-outline-light col-2 mt-1">sign-in</button>
-                </div>
+                    <div class="row">
+                        <button type="submit" class="btn btn-outline-light mt-1">sign-in</button>
+                    </div>
+                </form>
             </div>
         </section>
         <footer>
