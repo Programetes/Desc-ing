@@ -1,7 +1,12 @@
+/* --- Geral --- */
+
 @font-face {
     font-family: pixelFont;
     src: url(../fonts/Better\ VCR\ 6.1.ttf)
 }
+
+/* --- Header --- */
+
 header{
     background-color: #0CC0DF;
 }
@@ -9,6 +14,9 @@ header{
     height: 1rem;
     background-color: #004BAD;
 }
+
+/* --- Index Slider --- */
+
 .tituloContainer{
     text-align: center;
     background-color: #0CC0DF;
@@ -24,6 +32,7 @@ header{
 .contentContainerIndex{
     background: linear-gradient(#121D46, #472BE0);
     min-height: 100vh;
+    padding-bottom: 3rem;
 }
 .cardWrapper *{
     margin: 0;
@@ -72,6 +81,12 @@ header{
     color: #000;
     font-weight: 600;
 }
+.swiper-pagination, .swiper-button-prev, .swiper-button-next{
+    color:#62ffff;
+}
+
+/* --- Explorar Jogos --- */
+
 .explorarJogosContainer {
     background-color: #0CC0DF;
     border-radius: 2.5rem;
@@ -87,12 +102,13 @@ header{
 .cardLine {
     height: 16rem;
 }
-.swiper-pagination, .swiper-button-prev, .swiper-button-next{
-    color:#62ffff;
-}
+
+/* --- Página Login e Signin --- */
+
 .contentContainerLogin {
     min-height: 100vh;
     background: linear-gradient(#472BE0, #9e2be0, #e02b7c);
+    padding-bottom: 3rem;
 }
 .loginWindowContainer * {
     font-family: pixelFont, sans-serif;
@@ -105,7 +121,6 @@ header{
     all: unset;
     margin-left: 1rem;
     height: 2rem;
-    width: 26rem;
     font-size: 21px;
 }
 .usernameInputContainer, .passwordInputContainer {
@@ -124,4 +139,7 @@ header{
 }
 .btn-outline-light {
     height: 3rem;
+}
+.logLinksContainer a, .loginLink a {
+    color: #472BE0;
 }
