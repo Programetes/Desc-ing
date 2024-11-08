@@ -156,3 +156,10 @@ header{
 .loginLink a {
     color: #e02b7c;
 }
+
+/* --- Página Jogos --- */
+
+.gamePageBanner {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
