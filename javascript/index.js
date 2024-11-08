@@ -26,16 +26,6 @@ new Swiper('.cardWrapper', {
   }
 });
 
-const apiKey = 'a28e99c86c1d4f8c91aec86cfa69a75d';
-
-async function fetchGameApi(){
-  let response;
-  let obj;
-  response = await fetch(`https://api.rawg.io/api/platforms?key=${apiKey}`).catch(err => console.error(err));
-  obj = await response.json();
-  console.log(obj);
-}
-
 function addAgeClassificacao() {
   for(let i=0; i<cardsJogoPop.length; i++) {
     

@@ -16,6 +16,3 @@ const viewPasswordBtn = document.querySelectorAll('.viewPasswordBtn');
 viewPasswordBtn.forEach(function(elem) {
   elem.addEventListener('click', togglePassword);
 });
-
-
-const passwordLogInput = document.querySelectorAll('.textInput');
