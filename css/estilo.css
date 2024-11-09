@@ -4,6 +4,9 @@
     font-family: pixelFont;
     src: url(../fonts/Better\ VCR\ 6.1.ttf)
 }
+img {
+    -webkit-user-drag: none;
+}
 
 /* --- Header --- */
 
@@ -162,4 +165,35 @@ header{
 .gamePageBanner {
     aspect-ratio: 16/9;
     object-fit: cover;
+}
+.gamePageBody {
+    background-color: #335;
+}
+.gamePageContentContainer {
+    min-height: 100vh;
+}
+.gamePageContentContainer * {
+    color: #c4c4c4;
+}
+.gamePageContentContainer button {
+    all: unset;
+}
+.buttonIcon {
+    transition: 300ms;
+}
+.rotated {
+    transition: 300ms;
+    transform: rotate(180deg);
+}
+.gameDropContent {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 500ms ease;
+}
+.gameDropContent div {
+    overflow: hidden;
+}
+.gameDropHidden {
+    grid-template-rows: 0fr;
+    overflow: hidden;
 }
