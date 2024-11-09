@@ -197,3 +197,8 @@ header{
     grid-template-rows: 0fr;
     overflow: hidden;
 }
+.buttonDrop {
+    border: 3px solid #c4c4c4;
+    border-radius: 10px;
+    background-color: #1e1e34;
+}
