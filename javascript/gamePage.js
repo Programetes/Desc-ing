@@ -11,7 +11,7 @@ function dropdown() {
 }
 
 
-const dropdownBtn = document.querySelectorAll('.gameDropBtn');
+const dropdownBtn = document.querySelectorAll('.buttonDrop');
 dropdownBtn.forEach(function(elem) {
     elem.addEventListener('click', dropdown);
 })
