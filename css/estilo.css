@@ -209,3 +209,37 @@ header{
     background-color: #0f0f1c;
     transition: background-color 300ms ease;
 }
+
+/* --- Footer --- */
+
+footer, .footerContainer{ 
+    background-color: #0CC0DF;
+    min-height: 20vh;
+}
+.footerIcon {
+    width: 2rem;
+}
+.footerIconBtn {
+    background-color: #3e68ff;
+    border-radius: 100%;
+}
+.footerIconBtn:hover {
+    background-color: #2949c0;
+    cursor: pointer;
+}
+.footerLinkList {
+    list-style: none;
+    padding: 0;
+}
+.footerLinkList .footerLink {
+    display: inline-block;
+    margin: 1.2rem 1.2rem 0 1.2rem;
+}
+footer a {
+    text-decoration: none;
+    color: #004BAD;
+    font-weight: 600;
+}
+footer a:hover {
+    color: #002c66;
+}
