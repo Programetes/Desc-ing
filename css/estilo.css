@@ -101,13 +101,21 @@ header{
     border-radius: 1rem;
     height: 3rem;
 }
-.pageLeft, .pageRight {
+.pageControl {
     all: unset;
     color: #121D46;
     transition: 200ms ease;
 }
-.pageLeft:hover, .pageRight:hover {
+.pageControl:hover {
     color: #472BE0;
+}
+.cardPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cardPageHidden {
+    display: none;
 }
 
 /* --- Página Login e Signin --- */
@@ -214,7 +222,7 @@ header{
 
 footer, .footerContainer{ 
     background-color: #0CC0DF;
-    min-height: 20vh;
+    min-height: 40vh;
 }
 .footerIcon {
     width: 2rem;

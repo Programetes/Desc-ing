@@ -54,4 +54,30 @@ function addAgeClassificacao() {
 }
 
 
+
+function explorarPageSwitch() {
+  let showingCard = document.querySelector('.cardPage');
+  let nextShowingCard;
+  if (this.id == 'controlRight'){
+    nextShowingCard = showingCard.nextElementSibling;
+  } else {
+    nextShowingCard = showingCard.previousElementSibling;
+  }
+
+  if (nextShowingCard != null) {
+    showingCard.classList.remove('cardPage');
+    showingCard.classList.add('cardPageHidden');
+  
+    nextShowingCard.classList.remove('cardPageHidden');
+    nextShowingCard.classList.add('cardPage');
+  }
+
+}
+
+
 const cardsJogoPop = document.querySelectorAll('.cardItem');
+
+const explorarControls = document.querySelectorAll('.pageControl');
+explorarControls.forEach(function(elem) {
+    elem.addEventListener('click', explorarPageSwitch)
+})
