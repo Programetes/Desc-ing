@@ -41,29 +41,29 @@
         <section class="contentContainerSignin d-flex justify-content-center container-fluid">
             <div class="loginWindowContainer col-6 d-flex align-items-center flex-column mt-5">
                 <div class="loginBanner">
-                    <img src="../img/SigninBanner.png" alt="Banner de Log-in" class="loginBannerImg">
+                    <img src="../img/SigninBanner.png" alt="Banner de Log-in" class="loginBannerImg col-12">
                 </div>
-                <form class="signinForm col-10 d-flex flex-column align-items-center">
+                <form class="signinForm col-10 d-flex flex-column align-items-center" action="/enviaContato.php" method="get">
                     <h1 class="signinTitle mt-3 text-center">User Log-in</h1>
                     <div class="usernameInputContainer mt-3 mb-2 p-3 d-flex justify-content-between align-items-center">
-                        <input type="text" name="signUsername" class="textInput" placeholder="Usuário" autocomplete="off">
+                        <input type="text" name="signUsername" class="textInput" placeholder="Usuário" autocomplete="off" required>
                         <span class="material-symbols-outlined">person</span>
                     </div>
                     <div class="usernameInputContainer mt-3 mb-2 p-3 d-flex justify-content-between align-items-center">
-                        <input type="text" name="signEmail" class="textInput" placeholder="e-mail" autocomplete="off">
+                        <input type="text" name="signEmail" class="textInput" placeholder="e-mail" autocomplete="off" required>
                         <span class="material-symbols-outlined">mail</span>
                     </div>
                     <div class="passwordInputContainer mt-3 mb-2 p-3 d-flex justify-content-between align-items-center">
-                        <input type="password" name="signPassword" class="textInput password" placeholder="Senha" autocomplete="off">
+                        <input type="password" name="signPassword" class="textInput password" placeholder="Senha" autocomplete="off" required>
                         <button type="button" tabindex="-1" class="iconContainer viewPasswordBtn"><span class="material-symbols-outlined">visibility_off</span></button>
                     </div>
                     <div class="passwordInputContainer mt-3 mb-3 p-3 d-flex justify-content-between align-items-center">
-                        <input type="password" name="signConfirmPassword" class="textInput password" placeholder="Confirme sua senha" autocomplete="off">
+                        <input type="password" name="signConfirmPassword" class="textInput password" placeholder="Confirme sua senha" autocomplete="off" required>
                         <button type="button" tabindex="-1" class="iconContainer viewPasswordBtn"><span class="material-symbols-outlined">visibility_off</span></button>
                     </div>
                     <p class="loginLink text-center">Já passou por aqui? <a href="login.html" class="criarContaLink">Entre com sua conta</a>!</p>
                     <div class="row">
-                        <button type="submit" class="btn btn-outline-light mt-1">sign-in</button>
+                        <input type="submit" value="sign-in" name="btnSignin" class="btn btn-outline-light mt-1">
                     </div>
                 </form>
             </div>
