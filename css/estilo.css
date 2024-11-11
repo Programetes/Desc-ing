@@ -4,6 +4,9 @@
     font-family: pixelFont;
     src: url(../fonts/Better\ VCR\ 6.1.ttf)
 }
+img {
+    -webkit-user-drag: none;
+}
 
 /* --- Header --- */
 
@@ -44,24 +47,18 @@ header{
     margin: 15px 60px 35px;
     overflow: hidden;
 }
-.cardList .cardItem{
+.cardItem{
     list-style: none;
     border: 2px solid transparent;
     border-radius: 12px;
     transition: 200ms ease;
 }
-.cardList .cardItem:hover .cardLink {
+.cardItem:hover .cardLink {
     border-radius: 12px;
     border: 3px solid #0CC0DF;
     transition: 200ms ease;
 }
-.cardList .cardItem .ageRatingContainer {
-    display: none;
-}
-.cardList .cardItem:hover .ageRatingContainer {
-    display: flex;
-}
-.cardList .cardItem .cardLink{
+.cardItem .cardLink{
     user-select: none;
     display: block;
     background-color: #FFF;
@@ -69,13 +66,13 @@ header{
     border-radius: 12px;
     text-decoration: none;
 }
-.cardList .cardLink .cardImg{
+.cardLink .cardImg{
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #121D46;
 }
-.cardList .cardLink .cardTitle{
+.cardLink .cardTitle{
     margin-top: 12px;
     font-size: clamp(0.5rem, 0.9rem, 1.2rem);
     color: #000;
@@ -88,19 +85,29 @@ header{
 /* --- Explorar Jogos --- */
 
 .explorarJogosContainer {
-    background-color: #0CC0DF;
-    border-radius: 2.5rem;
+    background-color: #004BAD;
+    border-radius: 2rem;
 }
 .explorarTitulo {
-    background-color: #62ffff;
+    background-color: #0CC0DF;
     color: #121D46;
-    border-radius: 2.5rem;
+    border-radius: 1rem;
 }
 .jogosContainerContent .cardList {
     margin: 2rem;
 }
-.cardLine {
-    height: 16rem;
+.jogosPageControls {
+    background-color: #0CC0DF;
+    border-radius: 1rem;
+    height: 3rem;
+}
+.pageLeft, .pageRight {
+    all: unset;
+    color: #121D46;
+    transition: 200ms ease;
+}
+.pageLeft:hover, .pageRight:hover {
+    color: #472BE0;
 }
 
 /* --- Página Login e Signin --- */
@@ -121,9 +128,6 @@ header{
 .loginWindowContainer * {
     font-family: pixelFont, sans-serif;
     color: #FFF;
-}
-.loginWindowContainer {
-    border-radius: 20px;
 }
 .textInput {
     all: unset;
@@ -155,4 +159,53 @@ header{
 }
 .loginLink a {
     color: #e02b7c;
+}
+
+/* --- Página Jogos --- */
+
+.gamePageBanner {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.gamePageBody {
+    background-color: #335;
+}
+.gamePageContentContainer {
+    min-height: 100vh;
+}
+.gamePageContentContainer * {
+    color: #c4c4c4;
+}
+.gamePageContentContainer button {
+    all: unset;
+}
+.buttonIcon {
+    transition: 300ms ease;
+}
+.rotated {
+    transition: 300ms ease;
+    transform: rotate(180deg);
+}
+.gameDropContent {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 500ms ease;
+}
+.gameDropContent div {
+    overflow: hidden;
+}
+.gameDropHidden {
+    grid-template-rows: 0fr;
+    overflow: hidden;
+}
+.buttonDrop {
+    border: 3px solid #c4c4c4;
+    border-radius: 10px;
+    background-color: #1e1e34;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+.buttonDrop:hover {
+    background-color: #0f0f1c;
+    transition: background-color 300ms ease;
 }
