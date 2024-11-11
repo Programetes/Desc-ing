@@ -217,11 +217,32 @@ header{
     transition: background-color 300ms ease;
 }
 
+/* --- Página Sobre o Site --- */
+
+.sobreBody {
+    background: linear-gradient(#9e2be0, #e02b7c);
+}
+.contentContainerSobre {
+    min-height: 100vh;
+}
+.sobreTituloContainer {
+    background-color: #0CC0DF;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem #002c66;
+}
+.sobreOSiteContainer {
+    min-height: 50vh;
+    background-color: #0CC0DF;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem #002c66;
+}
+
 /* --- Footer --- */
 
 footer, .footerContainer{ 
     background-color: #0CC0DF;
     min-height: 40vh;
+    margin-top: 1rem;
 }
 .footerIcon {
     width: 2rem;
