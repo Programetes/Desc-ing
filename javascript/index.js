@@ -53,8 +53,6 @@ function addAgeClassificacao() {
   }
 }
 
-
-
 function explorarPageSwitch() {
   let showingCard = document.querySelector('.cardPage');
   let nextShowingCard;
@@ -71,7 +69,6 @@ function explorarPageSwitch() {
     nextShowingCard.classList.remove('cardPageHidden');
     nextShowingCard.classList.add('cardPage');
   }
-
 }
 
 
