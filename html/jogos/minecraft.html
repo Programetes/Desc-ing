@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
     </head>
-    <body class="gamePageBody">
+    <body onload="addGamePlatform();" class="gamePageBody">
         <header>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -51,8 +51,8 @@
                                 </button>
                             </div>
                             <div class="gameDropContent gameDropHidden">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora officiis provident facilis laborum veniam totam adipisci enim reprehenderit debitis praesentium est odio et tempore expedita, porro vel odit! Doloremque, nesciunt!</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="col-11 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora officiis provident facilis laborum veniam totam adipisci enim reprehenderit debitis praesentium est odio et tempore expedita, porro vel odit! Doloremque, nesciunt!</p>
                                 </div>
                             </div>
                         </div>
@@ -66,9 +66,9 @@
                                     <h1>Informações gráficas</h1><span class="material-symbols-outlined buttonIcon" style="font-size: 3rem;">keyboard_arrow_down</span>
                                 </button>
                             </div>
-                            <div class="gameDropContent gameDropHidden">
-                                <div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quisquam ad odio nihil. Impedit obcaecati ullam placeat quisquam. Voluptate, nisi! Necessitatibus temporibus aliquam nesciunt atque est recusandae suscipit sunt aut.</p>
+                            <div class="gameDropContent gameDropHidden justify-content-center">
+                                <div class="d-flex justify-content-center">
+                                    <p class="col-11 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quisquam ad odio nihil. Impedit obcaecati ullam placeat quisquam. Voluptate, nisi! Necessitatibus temporibus aliquam nesciunt atque est recusandae suscipit sunt aut.</p>
                                 </div>
                             </div>
                         </div>
@@ -83,8 +83,8 @@
                                 </button>
                             </div>
                             <div class="gameDropContent gameDropHidden">
-                                <div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quisquam ad odio nihil. Impedit obcaecati ullam placeat quisquam. Voluptate, nisi! Necessitatibus temporibus aliquam nesciunt atque est recusandae suscipit sunt aut.</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="col-11 mt-2 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora officiis provident facilis laborum veniam totam adipisci enim reprehenderit debitis praesentium est odio et tempore expedita, porro vel odit! Doloremque, nesciunt!</p>
                                 </div>
                             </div>
                         </div>
@@ -99,15 +99,24 @@
                                 </button>
                             </div>
                             <div class="gameDropContent gameDropHidden">
-                                <div>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quisquam ad odio nihil. Impedit obcaecati ullam placeat quisquam. Voluptate, nisi! Necessitatibus temporibus aliquam nesciunt atque est recusandae suscipit sunt aut.</p>
+                                <div class="d-flex justify-content-center">
+                                    <p class="col-11 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora officiis provident facilis laborum veniam totam adipisci enim reprehenderit debitis praesentium est odio et tempore expedita, porro vel odit! Doloremque, nesciunt!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <section>
+                    <div class="plataformasJogoContainer m-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="tituloPlatContainer">
+                            <h1 class="tituloPlat m-2">Plataformas</h1>
+                        </div>
+                        <div class="plataformasJogo col-10 d-flex justify-content-around align-items-center platPC platPs">
+                            
+                        </div>
+                    </div>
+                </section>
             </div>
-            
         </main>
         <footer>
             <div class="footerContainer container d-flex flex-column align-items-center justify-content-center">

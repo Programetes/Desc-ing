@@ -80,7 +80,7 @@ function filtrarJogos() {
       explorarJogos[i].style.display = 'block';
     }
     document.querySelector('#filtrosBtnIcon').innerHTML = '<span class="material-symbols-outlined">filter_alt_off</span>';
-    return 0;
+    return;
   }
   
   document.querySelector('#filtrosBtnIcon').innerHTML = '<span class="material-symbols-outlined">filter_alt</span>';
