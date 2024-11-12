@@ -155,6 +155,13 @@
                     <div class="explorarTitulo d-flex justify-content-center mt-2 col-4">
                         <h1>Explorar</h1>
                     </div>
+                    <div class="filtrosJogos">
+                        <button type="button" class="filtrosBtn btn btn-outline-light d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modalFiltros">Filtros
+                            <div id="filtrosBtnIcon">
+                                <span class="material-symbols-outlined">filter_alt_off</span>
+                            </div>
+                        </button>
+                    </div>
                     <div class="jogosContainerContent d-flex flex-column align-items-center col-12">
                         <div class="cardContainer d-flex justify-content-center">
                             <div class="cardPageContainer d-flex justify-content-center">
@@ -177,7 +184,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="cardItem m-1 col-3">
+                                    <div class="cardItem m-1 col-3 age0">
                                         <a href="jogos/celeste.html" class="cardLink">
                                             <img class="cardImg w-100" src="https://images.nintendolife.com/ef02c2e24c59e/celeste-cover.cover_large.jpg" alt="Capa Celeste">
                                             <h2 class="cardTitle">Celeste</h2>
@@ -224,7 +231,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="cardItem m-1 col-3">
+                                    <div class="cardItem m-1 col-3 age0">
                                         <a href="jogos/hollowKnight.html" class="cardLink">
                                             <img class="cardImg w-100" src="https://image.api.playstation.com/cdn/UP1822/CUSA13632_00/GuFQKWlrIVODEA1su20fCOrNZEYX5CB9.png" alt="Capa Hollow Knight">
                                             <h2 class="cardTitle">Hollow Knight</h2>
@@ -242,7 +249,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="cardItem m-1 col-3">
+                                    <div class="cardItem m-1 col-3 age0">
                                         <a href="jogos/minecraft.html" class="cardLink">
                                             <img class="cardImg w-100" src="https://cdn.awsli.com.br/1617/1617257/produto/220376517/minecraft-ps4-digital-83a575ef.jpeg" alt="Capa Minecraft">
                                             <h2 class="cardTitle">Minecraft</h2>
@@ -251,7 +258,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="cardItem m-1 col-3">
+                                    <div class="cardItem m-1 col-3 age0">
                                         <a href="jogos/papoEYo.html" class="cardLink">
                                             <img class="cardImg w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbRpW49zDWpceMsXux7rUQcoD-V-BFSDHkA&s" alt="Capa Papo & Yo">
                                             <h2 class="cardTitle">Papo & Yo</h2>
@@ -335,6 +342,51 @@
                             <button id="controlRight" class="pageControl d-flex align-items-center">
                                 <span class="material-symbols-outlined">arrow_forward_ios</span>
                             </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalFiltros">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>Seleção de filtros:</h1>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="formFiltros">
+                                    <h4>filtrar por classificação indicativa:</h2>
+                                    <div class="row flex-column">
+                                        <div>
+                                            <input class="checkAge" type="checkbox" id="age0">
+                                            <label for="age0">Livre</label>
+                                        </div>
+                                        <div>
+                                            <input class="checkAge" type="checkbox" id="age10">
+                                            <label for="age10">10 anos</label>
+                                        </div>
+                                        <div>
+                                            <input class="checkAge" type="checkbox" id="age12">
+                                            <label for="age12">12 anos</label>
+                                        </div>
+                                        <div>
+                                            <input class="checkAge" type="checkbox" id="age14">
+                                            <label for="age14">14 anos</label>
+                                        </div>
+                                        <div>
+                                            <input class="checkAge" type="checkbox" id="age16">
+                                            <label for="age16">16 anos</label>
+                                        </div>
+                                        <div>
+                                            <input class="checkAge" type="checkbox" id="age18">
+                                            <label for="age18">18 anos</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="filtrarModal">Filtrar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            </div>
                         </div>
                     </div>
                 </div>

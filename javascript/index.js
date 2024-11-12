@@ -71,6 +71,32 @@ function explorarPageSwitch() {
   }
 }
 
+function filtrarJogos() {
+  let ageCheckFilter = document.querySelectorAll('.checkAge:checked');
+  let explorarJogos = document.querySelectorAll('.explorarJogosContainer .cardItem');
+
+  if (ageCheckFilter.length == 0) {
+    for (let i=0; i<explorarJogos.length; i++) {
+      explorarJogos[i].style.display = 'block';
+    }
+    document.querySelector('#filtrosBtnIcon').innerHTML = '<span class="material-symbols-outlined">filter_alt_off</span>';
+    return 0;
+  }
+  
+  document.querySelector('#filtrosBtnIcon').innerHTML = '<span class="material-symbols-outlined">filter_alt</span>';
+
+  for (let i=0; i<explorarJogos.length; i++) {
+    for (let j=0; j<ageCheckFilter.length; j++) {
+      if (explorarJogos[i].classList.contains(ageCheckFilter[j].id)) {
+        explorarJogos[i].style.display = 'block';
+        break;
+      } else {
+        explorarJogos[i].style.display = 'none';
+      }
+    }
+  }
+}
+
 
 const cardsJogoPop = document.querySelectorAll('.cardItem');
 
@@ -78,3 +104,6 @@ const explorarControls = document.querySelectorAll('.pageControl');
 explorarControls.forEach(function(elem) {
     elem.addEventListener('click', explorarPageSwitch)
 })
+
+const filtrarBtnModal = document.getElementById('filtrarModal');
+filtrarBtnModal.addEventListener('click', filtrarJogos);

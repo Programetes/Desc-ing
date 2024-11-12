@@ -85,6 +85,7 @@ header{
 /* --- Explorar Jogos --- */
 
 .explorarJogosContainer {
+    position: relative;
     background-color: #004BAD;
     border-radius: 2rem;
 }
@@ -92,6 +93,11 @@ header{
     background-color: #0CC0DF;
     color: #121D46;
     border-radius: 1rem;
+}
+.filtrosJogos {
+    position: absolute;
+    top: 2%;
+    right: 3%;
 }
 .jogosContainerContent .cardList {
     margin: 2rem;
@@ -127,11 +133,13 @@ header{
     min-height: 100vh;
     background: linear-gradient(#472BE0, #9e2be0, #e02b7c);
     padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
 }
 .contentContainerSignin {
     min-height: 100vh;
     background: linear-gradient(#121D46, #472BE0);
     padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
 }
 .loginWindowContainer * {
     font-family: pixelFont, sans-serif;
@@ -224,6 +232,7 @@ header{
 }
 .contentContainerSobre {
     min-height: 100vh;
+    padding-bottom: 1.5rem;
 }
 .sobreTituloContainer {
     background-color: #0CC0DF;
@@ -242,7 +251,6 @@ header{
 footer, .footerContainer{ 
     background-color: #0CC0DF;
     min-height: 40vh;
-    margin-top: 1rem;
 }
 .footerIcon {
     width: 2rem;
