@@ -123,6 +123,9 @@ header{
 .cardPageHidden {
     display: none;
 }
+.explorarJogosContainer .cardTitle {
+    font-size: 0.7rem
+}
 
 /* --- Página Login e Signin --- */
 
